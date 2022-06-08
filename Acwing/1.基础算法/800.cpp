@@ -12,8 +12,9 @@ int main() {
 
     for(int i = 0, j = m - 1; i < n; i ++ ) {
         while(j < 0 && a[i] + b[j] > x) j -- ;
-        if(j >= 0 && a[i] + b[j] == x) 
+        if(j >= 0 && a[i] + b[j] == x) {
             cout << i << " " << j << endl;
+        }
     }
     return 0;
 }
